@@ -35,7 +35,8 @@ class Chef
         when 'smartos'
           Chef::Provider::TcpTuning::Illumos
         else
-          Chef::Provider::TcpTuning
+          Chef::Log.warn("No TcpTuning provider for platform_family: #{node.platform_family}")
+          nil
         end
       end
     end

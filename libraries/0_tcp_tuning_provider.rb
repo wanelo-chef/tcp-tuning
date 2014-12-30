@@ -15,6 +15,7 @@ class Chef
       end
 
       def action_update
+        return unless new_resource.default_provider
         provider.run_action(:update)
       end
 
