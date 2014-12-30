@@ -1,0 +1,7 @@
+name 'tcp-tuning'
+maintainer 'Wanelo, Inc.'
+maintainer_email 'ops@wanelo.com'
+license 'MIT'
+description 'Tune TCP settings'
+long_description 'Tune TCP settings'
+version '0.1.0'
